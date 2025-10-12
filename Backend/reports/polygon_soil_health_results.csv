@@ -1,0 +1,76 @@
+name,latitude,longitude,ndvi,health_score,status
+Nairobi,-1.28,36.8,0.594,72.18,Healthy
+Nairobi,-1.28,36.82,0.367,51.55,Moderately Degraded
+Nairobi,-1.3,36.82,0.473,61.18,Moderately Degraded
+Nairobi,-1.3,36.8,0.367,51.55,Moderately Degraded
+Nairobi,-1.28,36.8,0.594,72.18,Healthy
+Mombasa,-4.05,39.65,0.096,26.91,Highly Degraded
+Mombasa,-4.05,39.7,0.724,84.0,Healthy
+Mombasa,-4.1,39.7,0.382,52.91,Moderately Degraded
+Mombasa,-4.1,39.65,0.724,84.0,Healthy
+Mombasa,-4.05,39.65,0.096,26.91,Highly Degraded
+Kisumu,-0.1,34.74,0.23,39.09,Highly Degraded
+Kisumu,-0.1,34.78,0.761,87.36,Healthy
+Kisumu,-0.14,34.78,0.626,75.09,Healthy
+Kisumu,-0.14,34.74,0.761,87.36,Healthy
+Kisumu,-0.1,34.74,0.23,39.09,Highly Degraded
+Eldoret,0.5,35.26,0.591,71.91,Healthy
+Eldoret,0.5,35.3,0.212,37.45,Highly Degraded
+Eldoret,0.46,35.3,0.591,71.91,Healthy
+Eldoret,0.46,35.26,0.571,70.09,Healthy
+Eldoret,0.5,35.26,0.591,71.91,Healthy
+Nakuru,-0.28,36.05,0.227,38.82,Highly Degraded
+Nakuru,-0.28,36.09,0.162,32.91,Highly Degraded
+Nakuru,-0.32,36.09,0.483,62.09,Moderately Degraded
+Nakuru,-0.32,36.05,0.162,32.91,Highly Degraded
+Nakuru,-0.28,36.05,0.227,38.82,Highly Degraded
+Thika,-1.03,37.06,0.243,40.27,Highly Degraded
+Thika,-1.03,37.1,0.434,57.64,Moderately Degraded
+Thika,-1.07,37.1,0.591,71.91,Healthy
+Thika,-1.07,37.06,0.434,57.64,Moderately Degraded
+Thika,-1.03,37.06,0.243,40.27,Highly Degraded
+Meru,0.04,37.63,0.786,89.64,Healthy
+Meru,0.04,37.67,0.711,82.82,Healthy
+Meru,0.0,37.67,0.786,89.64,Healthy
+Meru,0.0,37.63,0.059,23.55,Highly Degraded
+Meru,0.04,37.63,0.786,89.64,Healthy
+Kitui,-1.35,38.0,0.636,76.0,Healthy
+Kitui,-1.35,38.05,0.719,83.55,Healthy
+Kitui,-1.4,38.05,0.539,67.18,Healthy
+Kitui,-1.4,38.0,0.719,83.55,Healthy
+Kitui,-1.35,38.0,0.636,76.0,Healthy
+Machakos,-1.5,37.23,0.132,30.18,Highly Degraded
+Machakos,-1.5,37.28,0.667,78.82,Healthy
+Machakos,-1.55,37.28,0.575,70.45,Healthy
+Machakos,-1.55,37.23,0.667,78.82,Healthy
+Machakos,-1.5,37.23,0.132,30.18,Highly Degraded
+Bungoma,0.56,34.55,0.567,69.73,Healthy
+Bungoma,0.56,34.6,0.244,40.36,Highly Degraded
+Bungoma,0.52,34.6,0.089,26.27,Highly Degraded
+Bungoma,0.52,34.55,0.628,75.27,Healthy
+Bungoma,0.56,34.55,0.567,69.73,Healthy
+Kakamega,0.28,34.75,0.834,94.0,Healthy
+Kakamega,0.28,34.8,0.55,68.18,Healthy
+Kakamega,0.24,34.8,0.815,92.27,Healthy
+Kakamega,0.24,34.75,0.604,73.09,Healthy
+Kakamega,0.28,34.75,0.834,94.0,Healthy
+Busia,0.44,34.11,0.458,59.82,Moderately Degraded
+Busia,0.44,34.16,0.637,76.09,Healthy
+Busia,0.4,34.16,0.13,30.0,Highly Degraded
+Busia,0.4,34.11,0.625,75.0,Healthy
+Busia,0.44,34.11,0.458,59.82,Moderately Degraded
+Siaya,0.07,33.9,0.164,33.09,Highly Degraded
+Siaya,0.07,33.95,0.354,50.36,Moderately Degraded
+Siaya,0.03,33.95,0.287,44.27,Moderately Degraded
+Siaya,0.03,33.9,0.626,75.09,Healthy
+Siaya,0.07,33.9,0.164,33.09,Highly Degraded
+Nyeri,-0.42,36.95,0.251,41.0,Moderately Degraded
+Nyeri,-0.42,37.0,0.547,67.91,Healthy
+Nyeri,-0.46,37.0,0.204,36.73,Highly Degraded
+Nyeri,-0.46,36.95,0.582,71.09,Healthy
+Nyeri,-0.42,36.95,0.251,41.0,Moderately Degraded
+Nanyuki,0.01,37.06,0.1,27.27,Highly Degraded
+Nanyuki,0.01,37.1,0.631,75.55,Healthy
+Nanyuki,-0.03,37.1,0.717,83.36,Healthy
+Nanyuki,-0.03,37.06,0.546,67.82,Healthy
+Nanyuki,0.01,37.06,0.1,27.27,Highly Degraded
