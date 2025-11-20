@@ -111,4 +111,6 @@ View the results in the Result Card, Map, and Charts sections.
 
 Optionally, download results as CSV or generate a PDF report.
 
-Project Structure
+Deployment
+frontend: vercel :https://soil-health-analyzer.vercel.app
+Pitch Deck URL : https://gamma.app/docs/Soil-Health-1jaua3af3e9iwc4
