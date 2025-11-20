@@ -1,8 +1,11 @@
 import React, { useState } from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import axios from "axios";
 import MapView from "./components/MapView";
 import ResultCard from "./components/ResultCard";
 import SoilHealthCharts from "./components/SoilHealthCharts";
+import Home from "./components/Home"; // Homepage component
+import Navbar from "./components/Navbar"; // <-- Navbar component
 import "./style.css";
 
 function App() {
@@ -22,7 +25,7 @@ function App() {
     try {
       const response = await axios.post(
         `${process.env.REACT_APP_BACKEND_URL}/analyze`,
-        { latitude, longitude, name: name || "" }  // backend-safe
+        { latitude, longitude, name: name || "" } // backend-safe
       );
 
       setResults([response.data]);
@@ -56,62 +59,77 @@ function App() {
   };
 
   return (
-    <div className="app-container">
-      <header>
-        <h1>🌱 Soil Health Analyzer 🌱</h1>
-        <p>AI-powered soil analysis using NDVI & geolocation</p>
-      </header>
+    <Router>
+      <Navbar /> {/* <-- Navbar appears on all pages */}
+      <Routes>
+        <Route path="/" element={<Home />} /> {/* Home page route */}
+        <Route
+          path="/analyze"
+          element={
+            <div className="app-container">
+              <header>
+                <h1>🌱 Soil Health Analyzer 🌱</h1>
+                <p>AI-powered soil analysis using NDVI & geolocation</p>
+              </header>
 
-      <section className="input-section">
-        <div className="input-group">
-          <input
-            type="text"
-            placeholder="Site Name (optional)"
-            value={name}
-            onChange={(e) => setName(e.target.value)}
-          />
-          <input
-            type="number"
-            placeholder="Latitude"
-            value={latitude}
-            onChange={(e) => setLatitude(e.target.value)}
-          />
-          <input
-            type="number"
-            placeholder="Longitude"
-            value={longitude}
-            onChange={(e) => setLongitude(e.target.value)}
-          />
-        </div>
+              <section className="input-section">
+                <div className="input-group">
+                  <input
+                    type="text"
+                    placeholder="Site Name (optional)"
+                    value={name}
+                    onChange={(e) => setName(e.target.value)}
+                  />
+                  <input
+                    type="number"
+                    placeholder="Latitude"
+                    value={latitude}
+                    onChange={(e) => setLatitude(e.target.value)}
+                  />
+                  <input
+                    type="number"
+                    placeholder="Longitude"
+                    value={longitude}
+                    onChange={(e) => setLongitude(e.target.value)}
+                  />
+                </div>
 
-        <div className="button-group">
-          <button className="analyze-btn" onClick={analyzePoint} disabled={loading}>
-            {loading ? "Analyzing..." : "Analyze"}
-          </button>
-          <button className="download-btn" onClick={downloadCSV}>
-            Download CSV
-          </button>
-        </div>
-      </section>
+                <div className="button-group">
+                  <button
+                    className="analyze-btn"
+                    onClick={analyzePoint}
+                    disabled={loading}
+                  >
+                    {loading ? "Analyzing..." : "Analyze"}
+                  </button>
+                  <button className="download-btn" onClick={downloadCSV}>
+                    Download CSV
+                  </button>
+                </div>
+              </section>
 
-      {results.length > 0 && (
-        <>
-          <section className="results-section">
-            {results.map((r, idx) => (
-              <ResultCard key={idx} data={r} />
-            ))}
-          </section>
+              {results.length > 0 && (
+                <>
+                  <section className="results-section">
+                    {results.map((r, idx) => (
+                      <ResultCard key={idx} data={r} />
+                    ))}
+                  </section>
 
-          <section className="map-section">
-            <MapView points={results} />
-          </section>
+                  <section className="map-section">
+                    <MapView points={results} />
+                  </section>
 
-          <section className="charts-section">
-            <SoilHealthCharts results={results} />
-          </section>
-        </>
-      )}
-    </div>
+                  <section className="charts-section">
+                    <SoilHealthCharts results={results} />
+                  </section>
+                </>
+              )}
+            </div>
+          }
+        />
+      </Routes>
+    </Router>
   );
 }
 

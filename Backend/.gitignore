@@ -1,32 +1,21 @@
-# Python cache files
+# Node modules
+node_modules/
+
+# Python cache
 __pycache__/
-*.py[cod]
-*$py.class
 
-# Environment
+# Environment files
 .env
-venv/
-env/
-ENV/
 
-# Byte-compiled / optimized / DLL files
-*.pyc
-*.pyo
-*.pyd
-
-# VS Code files
-.vscode/
-
-# Logs and database files
+# Logs
 *.log
-*.sqlite3
 
-# macOS files
-.DS_Store
+# Compiled files
+*.pyc
 
-# Jupyter Notebook checkpoints
-.ipynb_checkpoints/
-
-# Backup files
-*.bak
-*.swp
+# Virtual environment
+venv/
+# Node stuff
+package-lock.json
+package.json
+node_modules/
